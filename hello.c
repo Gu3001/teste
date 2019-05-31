@@ -5,8 +5,10 @@ int main()
     int idade, * p;
     idade = 18;
     p = &idade;
-    printf("ola mundo\n");
-    printf("O endereço da variável é %p\n", p);
+
+    *p = 22;
+    printf("ola mundo",p);
+    printf("O endereço da variável é: %p\n", p);
     return 0;
 }
 
